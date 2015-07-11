@@ -37,10 +37,15 @@
             <h2>Quick start</h2>
             1.- Include the files
             <pre><code class="language-markup">
+            &lt;!-- Bootstrap and JQuery -->
+            &lt;link rel="stylesheet" href="bootstrap.min.css">
+            &lt;script src="jquery-2.1.4.min.js"> &lt;/script>
+            
+            &lt;!-- Plugin -->
             &lt;link rel="stylesheet" href="SimpleCalculadorajQuery.css">
             &lt;script src="SimpleCalculadorajQuery.js">&lt;/script></code></pre>
             
-            
+             
             
             2.- Create HTML Element
             <pre><code class="language-markup">
@@ -95,7 +100,8 @@ call the the plugin on a container wish you wish
     
     <script>
          $("#idCalculadora").Calculadora();
-         $("#micalc").Calculadora({'EtiquetaBorrar':'Clear'});
+         $("#micalc").Calculadora({'EtiquetaBorrar':'Clear',TituloHTML:'<a class="btn-block btn3d btn btn-success" href="http://develoteca.com" target="_blank">By Develoteca.com</a>'});
+        
         $("#CalcOptoins").Calculadora({
             EtiquetaBorrar:'Clear',
             ClaseBtns1: 'warning', /* Color Numbers*/
