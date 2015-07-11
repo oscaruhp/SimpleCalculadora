@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <script src="jquery-2.1.4.min.js"></script>
+       
+   <link rel="stylesheet" href="prism.css">
+   <script src="prism.js"></script>
+
+   <link rel="stylesheet" href="SimpleCalculadorajQuery.css">
+   <script src="SimpleCalculadorajQuery.js"></script>
+       
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+           <h2>SimpleCalculadora <strong><span style="color:#4274D7">v1.0</span></strong></h2>
+          </div>
+          <div class="col-md-12">
+          
+              <a href="https://github.com/oscaruhp/SimpleCalculadora/archive/gh-pages.zip" class="btn3d btn btn-danger btn-lg">Download</a>
+          </div>
+        <div class=" col-md-4 ">
+           
+            <div id="idCalculadora"></div>
+		</div>
+          
+		<div class="col-md-6" >
+          <div id="micalc"></div>
+        </div>
+          
+      </div>
+        <div class="row">
+        <div class="col-md-12">
+            <h2>Quick start</h2>
+            1.- Include the files
+            <pre><code class="language-markup">
+            &lt;link rel="stylesheet" href="SimpleCalculadorajQuery.css">
+            &lt;script src="SimpleCalculadorajQuery.js">&lt;/script></code></pre>
+            
+            
+            
+            2.- Create HTML Element
+            <pre><code class="language-markup">
+              &lt;div id="idCalculadora"> &lt;/div>
+              &lt;div id="micalc"> &lt;/div></code></pre>
+            
+            3.- Call the the plugin on a container as your wish
+            <pre><code class="language-javascript">
+                $("#idCalculadora").Calculadora();
+                $("#micalc").Calculadora({'EtiquetaBorrar':'Clear'});
+               </code></pre>
+            4.- All done!
+            
+            <h2>Options</h2>
+            you can custom by passing options when call the plugin, all available options are listed below.
+call the the plugin on a container wish you wish
+            
+            
+             <pre><code class="language-javascript">
+                $("#idCalculadora").Calculadora({
+                option: value,
+                option2: value2
+                });
+               </code></pre>
+            
+           <pre><code class="language-javascript">
+               {
+						TituloHTML:'&lt;a class="btn-block btn3d btn btn-success" href="http://develoteca.com" target="_blank">Calculadora&lt;/a>', /*Title HTML*/
+						Botones:["7","8","9","+","4","5","6","-","3","2","1","*","0",".","=","/"], /* Order Numbers*/
+						Signos:["+", "-", "*", "/"], /*Simbols*/
+						ClaseBtns1: 'primary', /* Color Numbers*/
+						ClaseBtns2: 'success', /* Color Operators*/
+						ClaseBtns3: 'warning', /* Color Clear*/
+						ClaseColumnas:'col-md-3 mbottom',
+						ClaseBotones:'btn3d btn-lg btn-block btn btn-',
+						txtSalida:idInstancia+'txtResultado', /* Ouput Result*/
+						ClasetxtSalida:'form-control txtr',
+						InputBorrar:idInstancia+'Borrar', /* Ouput Clear*/
+						ClaseInputBorrar:'btn3d btn btn-danger btn-lg btn-block',
+						EtiquetaBorrar:'Borrar' /* Label Ouput Result*/
+					}
+               </code></pre>
+            
+           <h2>Demo (Options)</h2>
+            <div class="col-md-6"><div id="CalcOptoins"></div></div>
+            <div class="col-md-6"></div>
+            
+            
+            </div>
+        </div>
+    </div>
+    
+    <script>
+         $("#idCalculadora").Calculadora();
+         $("#micalc").Calculadora({'EtiquetaBorrar':'Clear'});
+        $("#CalcOptoins").Calculadora({
+            EtiquetaBorrar:'Clear',
+            ClaseBtns1: 'warning', /* Color Numbers*/
+            ClaseBtns2: 'success', /* Color Operators*/
+			ClaseBtns3: 'primary', /* Color Clear*/
+            TituloHTML:'<h2>Develoteca.com</h2>'
+        
+        });
+         
+        
+    </script>
+    
+  </body>
+</html>
