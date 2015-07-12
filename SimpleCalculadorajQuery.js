@@ -1,4 +1,13 @@
-jQuery.fn.extend({Calculadora: function(op) {
+/*
+ * jQuery SimpleCalculadora
+ * @author dimti28@gmail.com - http://develoteca.com
+ * @version 1.0
+ * @date Julio 10, 2015
+ * @category jQuery plugin
+ * @copyright (c) 2015 dimti28@gmail.com (http://develoteca.com)
+ * @license CC Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) - http://creativecommons.org/licenses/by-nc-sa/3.0/
+ */
+ jQuery.fn.extend({Calculadora: function(op) {
 					var LaCalculadora=this;
 					var idInstancia=$(LaCalculadora).attr('id');
 					var NombreBotonesClase=idInstancia+'tcl';
