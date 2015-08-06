@@ -1,2 +1,2 @@
 # SimpleCalculadora
-Demo: https://github.com/oscaruhp/SimpleCalculadora
+Demo: http://oscaruhp.github.io/SimpleCalculadora/
